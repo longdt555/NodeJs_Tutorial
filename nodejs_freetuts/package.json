@@ -1,0 +1,27 @@
+{
+  "name": "nodejs_freetuts",
+  "version": "1.0.0",
+  "description": "this is nodejs tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/longdt555/NodeJs_Tutorial.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "longdt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/longdt555/NodeJs_Tutorial/issues"
+  },
+  "homepage": "https://github.com/longdt555/NodeJs_Tutorial#readme",
+  "dependencies": {
+    "balanced-match": "^1.0.0",
+    "node-persist": "0.0.8"
+  }
+}

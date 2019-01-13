@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Javascript tutorial</title>
+  <script src="switchcase.js" type="text/javascript"></script>
+  <script src="function.js" type="text/javascript"></script>
+</head>
+
+<body onload="onLoad()">
+
+  <form name="calForm">
+    Number 1:<input type="text" name="num1" onchange="document.calForm.add.value= additionFuc(this.value); document.calForm.sub.value= subtractionFuc(this.value);
+    document.calForm.dev.value= DevisionFuc(this.value); document.calForm.mul.value= multiplicationFuc(this.value);"><br>
+    Addition:<input type="text" name="add"><br>
+    Subtraction:<input type="text" name="sub"><br>
+    Devision:<input type="text" name="dev"><br>
+    Multiplication:<input type="text" name="mul"><br>
+  </form>
+
+  <input type="button" ondblclick="ondbClickEvent()" value="ondclick">
+
+  <img src="https://png.pngtree.com/svg/20170330/smile_1148343.png" onmouseover="bigImg(this)" onmouseout="normstlalImg(this)" width="100px" height="100px">
+
+  <p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
+  <p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
+
+  <br>
+  ONKEYDOWN:<input type="text" onkeydown="onKeyDown(this)">
+  <br>
+  ONKEYUP <input type="text" id="onkeyup" onkeyup="onKeyUp(this)">
+  <br>
+
+  Enter Your Name:<input type="text" id="txt-val">
+  <br>
+  <h1 id="result"></h1>
+  <script type="text/javascript">
+    var t = new Array("Dinh", "The", "Long", "haha", "hehe");
+    document.write(t.join(' '));
+    document.write(t.slice(1, 4));
+    addEListerner();
+    checkInputLenght();
+    windowEvent();
+  </script>
+</body>
+
+</html>

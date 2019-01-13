@@ -1,0 +1,59 @@
+<html>
+    
+
+<head>
+          <title>Javascript tutorial</title>
+          
+  <!-- <script language="javascript">
+            alert("Hello World!");
+        </script> -->
+      </head>
+    
+
+<body>
+  <input type="button" id="clickme" value="Click me" />
+  <!-- code javascript inline -->
+  <input type="button" onclick="alert('This is code inline.')" value="InlineCode" />
+
+  <!-- confirm function in  javascript -->
+  <input type="button" id="confirmFuc" value="ComfirmFuc" />
+
+  <!-- prompt function in javascript -->
+  <input type="button" id="promptFuc" value="PromptFuc" />
+
+
+  <script language="javascript">
+    var sayHello = "Hello world";
+    document.write(sayHello);
+
+    //Alert Function
+    var button = document.getElementById("clickme");
+    //khi click vao element trong button thi thic hien mot function
+    button.addEventListener('click', function() {
+      alert('Hello World');
+    });
+
+
+    //Comfirm Function
+    var conf = document.getElementById("confirmFuc");
+    //khi click vao element trong button thi thic hien motcomf function
+    conf.addEventListener('click', function() {
+      confirm('Are you there?');
+    });
+
+    //Prompt
+    var conf = document.getElementById("promptFuc");
+    //khi click vao element trong promptFuc thi thic hien motcomf function
+    conf.addEventListener('click', function() {
+      var name = prompt('What \'s your name?');
+      alert(name);
+    });
+    //Alert Function
+
+    var website = 'freetuts.net';
+    console.log(website);
+  </script>
+      
+</body>
+
+</html>
